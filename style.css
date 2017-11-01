@@ -567,14 +567,21 @@ transition: opacity 1.5s ease-in 0s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     text-align: center;
     padding: 20px 0;
+    background: #000;
    
+}
+.png {
+    width: 100px;
+    margin: 0 auto;
+    padding: 0;
 }
 .png img{
     width: 100px;
@@ -593,35 +600,29 @@ transition: opacity 1.5s ease-in 0s;
     -webkit-box-shadow:  0 0 30px 10px rgb(199, 5, 5);
     
             box-shadow:  0 0 30px 10px rgb(199, 5, 5);
-    /*rgb(199, 5, 5)*/
+    
 }
 
-.png img:hover{
-    
-   /* transform: rotate(360deg);
-    transition: transform .5s ease .1s;*/
+.png img:hover{ 
+
     cursor: pointer;
-    /*filter: drop-shadow(0 0 10px rgb(199, 5, 5));*/
-    /*transition: filter .5s ease .1s;*/
+   
 
     -webkit-box-shadow: inset 0 0 30px 10px black;
 
             box-shadow: inset 0 0 30px 10px black; 
 }
 
-.png::after {
-    display: block;
-    content: "HELLO DARKNESS, MY OLD FRIEND!";
+.footer h2 {
+    
+    
     font-size: 3em;
-    -webkit-transition: -webkit-filter .5s ease .1s;
-    transition: -webkit-filter .5s ease .1s;
-    -o-transition: filter .5s ease .1s;
-    transition: filter .5s ease .1s;
-    transition: filter .5s ease .1s, -webkit-filter .5s ease .1s;
+    -webkit-filter: drop-shadow(0 0 10px rgb(199, 5, 5));
+            filter: drop-shadow(0 0 10px rgb(199, 5, 5));
    
 }
 
-.png:hover::after {
+.footer h2:hover{
     -webkit-filter: drop-shadow(0 0 10px rgb(199, 5, 5));
             filter: drop-shadow(0 0 10px rgb(199, 5, 5));
      -webkit-transition: -webkit-filter .5s ease .1s;
